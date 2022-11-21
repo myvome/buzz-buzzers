@@ -1,5 +1,5 @@
 function findDeviceByName(nodeHid) {
-    const buzzDevice = nodeHid.devices().find(d => d.product.match(/Buzz/));
+    const buzzDevice = nodeHid.devices().find(d => d.product.match(/Wbuzz/));
     return new nodeHid.HID(buzzDevice.vendorId, buzzDevice.productId);
 }
 module.exports = function(nodeHid) {
